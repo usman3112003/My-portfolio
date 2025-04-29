@@ -1,0 +1,365 @@
+body {
+  background-image: url("4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  overflow: auto;
+}
+
+..header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+  margin: 25px;
+  background-color: transparent;
+}
+
+.menu-icon {
+  position: absolute;
+  left: 20px;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 36px; /* Change title font size to 36px */
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+  transition: color 1s ease; /* Smooth color transition on hover */
+}
+
+.title:hover {
+  color: #f0a500; /* Change title color on hover */
+}
+
+/* Navigation Menu Styling */
+.menu {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Initially, hide the menu */
+.menu ul {
+  list-style-type: none;
+  padding: 10px;
+  position: absolute;
+  left: -250px;  /* Hide the menu off-screen initially */
+  top: 20px;
+  background-color: rgba(0, 0, 0, 0.8);  /* Dark background for the menu */
+  width: 250px;  /* Adjust the width of the menu */
+  height: 40%;  /* Take up the full height of the screen */
+  transition: left 0.5s ease-in-out;  /* Smooth sliding animation */
+}
+
+/* Show the menu when toggled */
+.menu ul.active {
+  left: 0;  /* Bring the menu to the left side of the screen */
+}
+
+.menu li {
+  display: block; /* Stack menu items vertically */
+  margin: 20px 0;
+  text-align: left;  /* Align the items to the left */
+  padding-left: 20px; /* Space from the left */
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #f0a500;
+}
+/* About Me Section Styling */
+.about-section {
+  padding: 50px 20px; /* Add padding around the section */
+  color: white; /* White text for better readability */
+  text-align: center; /* Center align the text */
+  border-radius: 10px; /* Slight rounded corners */
+  margin: 20px; /* Add some margin around the section */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect to lift the section */
+}
+
+.about-section h2 {
+  font-size: 36px; /* Larger font for the section title */
+  font-weight: 700;
+  margin-bottom: 20px; /* Space below the heading */
+  text-transform: uppercase; /* Make the heading uppercase */
+  color: #f0a500; /* A golden color for the heading */
+}
+
+.about-section p {
+  font-size: 18px; /* Comfortable font size for the paragraph */
+  line-height: 1.6; /* Increase line height for readability */
+  max-width: 800px; /* Set max width for the paragraph to prevent it from becoming too wide */
+  margin: 0 20px 20px 20px; /* Align to left with margin on all sides */
+  color: #e0e0e0; /* Lighter color for the paragraph text */
+  text-align: left; /* Align text to the left */
+}
+
+.about-section a {
+  color: dark_blue; /* Set the link color to match the heading */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make links bold */
+}
+
+.about-section a:hover {
+  color: red; /* Change link color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+
+
+/* Skills Section Styling */
+.skills-section {
+  padding: 50px 20px;
+  color: white; /* White text for readability */
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+}
+
+.skills-section h2 {
+  font-size: 36px; /* Larger title font */
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #f0a500; /* Golden color for the heading */
+}
+
+.skills-section ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  margin-left: 20px; /* Add margin to the left for spacing */
+  text-align: left; /* Align text to the left */
+}
+
+.skills-section li {
+  font-size: 18px; /* Comfortable font size */
+  line-height: 1.8;
+  margin-bottom: 15px; /* Space between each list item */
+  color: #e0e0e0; /* Lighter color for the list items */
+}
+
+.skills-section li strong {
+  color: #f0a500; /* Golden color for skill categories */
+  font-weight: bold;
+}
+
+.skills-section li:hover {
+  background-color: #333333; /* Slightly darker background on hover */ 
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+/* Language Proficiency Section Styling */
+.language-proficiency {
+  padding: 50px 20px; /* Add padding around the section */
+  color: white; /* White text for better readability */
+ /* background-color: #2c2c2c; /* Dark background to contrast the text */  */
+  text-align: center; /* Center align the text */
+  border-radius: 10px; /* Slight rounded corners */
+  margin: 20px; /* Add some margin around the section */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect to lift the section */
+}
+
+.language-proficiency h2 {
+  font-size: 36px; /* Larger font for the section title */
+  font-weight: 700;
+  margin-bottom: 20px; /* Space below the heading */
+  text-transform: uppercase; /* Make the heading uppercase */
+  color: #f0a500; /* Golden color for the heading */
+}
+
+.language-proficiency ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Align the list items to the left */
+}
+
+.language-proficiency li {
+  font-size: 18px; /* Comfortable font size for the list items */
+  line-height: 1.8; /* Increase line height for readability */
+  margin-bottom: 10px; /* Space between each list item */
+  color: #e0e0e0; /* Lighter color for the list items */
+}
+
+.language-proficiency li strong {
+  color: #f0a500; /* Golden color for skill categories */
+  font-weight: bold;
+}
+
+.language-proficiency li:hover {
+  background-color: #333333; /* Slightly darker background on hover */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+
+
+/* My Projects Section Styling */
+.my-projects {
+  padding: 50px 20px; /* Add padding around the section */
+  color: white; /* White text for better readability */
+  background-color: #2c2c2c; /* Dark background to contrast the text */
+  text-align: center; /* Center align the text */
+  border-radius: 10px; /* Slight rounded corners */
+  margin: 20px; /* Add some margin around the section */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect to lift the section */
+}
+
+.my-projects h2 {
+  font-size: 36px; /* Larger font for the section title */
+  font-weight: 700;
+  margin-bottom: 20px; /* Space below the heading */
+  text-transform: uppercase; /* Make the heading uppercase */
+  color: #f0a500; /* Golden color for the heading */
+}
+
+.my-projects ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Align the list items to the left */
+}
+
+.my-projects li {
+  font-size: 18px; /* Comfortable font size for the list items */
+  line-height: 1.8; /* Increase line height for readability */
+  margin-bottom: 10px; /* Space between each list item */
+  color: #e0e0e0; /* Lighter color for the list items */
+}
+
+.my-projects a {
+  color: #f0a500; /* Golden color for the links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make links bold */
+}
+
+.my-projects a:hover {
+  color: red; /* Change link color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.my-projects li:hover {
+  background-color: #333333; /* Slightly darker background on hover */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+
+/* Personal Information Section Styling */
+.personal-information {
+  padding: 50px 20px; /* Add padding around the section */
+  color: white; /* White text for better readability */
+  background-color: #2c2c2c; /* Dark background to contrast the text */
+  text-align: center; /* Center align the text */
+  border-radius: 10px; /* Slight rounded corners */
+  margin: 20px; /* Add some margin around the section */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect to lift the section */
+}
+
+.personal-information h2 {
+  font-size: 36px; /* Larger font for the section title */
+  font-weight: 700;
+  margin-bottom: 20px; /* Space below the heading */
+  text-transform: uppercase; /* Make the heading uppercase */
+  color: #f0a500; /* Golden color for the heading */
+}
+
+.personal-information ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Align the list items to the left */
+}
+
+.personal-information li {
+  font-size: 18px; /* Comfortable font size for the list items */
+  line-height: 1.8; /* Increase line height for readability */
+  margin-bottom: 10px; /* Space between each list item */
+  color: #e0e0e0; /* Lighter color for the list items */
+}
+
+.personal-information li strong {
+  color: #f0a500; /* Golden color for categories */
+  font-weight: bold;
+}
+
+.personal-information li:hover {
+  background-color: #333333; /* Slightly darker background on hover */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+
+}   
+
+/* Contact Us Section Styling */
+.contact-us {
+  padding: 50px 20px; /* Add padding around the section */
+  color: white; /* White text for better readability */
+  background-color: #2c2c2c; /* Dark background to contrast the text */
+  text-align: center; /* Center align the text */
+  border-radius: 10px; /* Slight rounded corners */
+  margin: 20px; /* Add some margin around the section */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect to lift the section */
+}
+
+.contact-us h2 {
+  font-size: 36px; /* Larger font for the section title */
+  font-weight: 700;
+  margin-bottom: 20px; /* Space below the heading */
+  text-transform: uppercase; /* Make the heading uppercase */
+  color: #f0a500; /* Golden color for the heading */
+}
+
+/* Use flexbox to align the items horizontally */
+.contact-us ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Align items horizontally */
+  justify-content: center; /* Center the items horizontally */
+  gap: 20px; /* Space between the items */
+}
+
+.contact-us li {
+  font-size: 18px; /* Comfortable font size for the list items */
+  line-height: 1.8; /* Increase line height for readability */
+  display: flex;
+  align-items: center;
+}
+
+.contact-us a {
+  color: #f0a500; /* Golden color for the links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make links bold */
+  display: flex;
+  align-items: center;
+}
+
+.contact-us a:hover {
+  color: red; /* Change link color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.contact-us .contact-logo {
+  width: 30px; /* Set the size for the logos */
+  height: 30px;
+  margin-right: 10px; /* Space between the logo and the text */
+}
+
+.contact-us a:hover .contact-logo {
+  transform: scale(1.1); /* Slightly enlarge the logo on hover */
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}    
