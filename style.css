@@ -9,13 +9,13 @@ body {
   overflow: auto;
 }
 
-..header {
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 20px;
-  margin: 25px;
+  padding: 10px;
+  margin: 15px;
   background-color: transparent;
 }
 
@@ -28,12 +28,16 @@ body {
 }
 
 .title {
-  font-size: 36px; /* Change title font size to 36px */
+  font-size: 36px;
   font-weight: 700;
-  color: white;
+  font-family: 'Raleway', sans-serif;
+  color: #f1f1f1;
   letter-spacing: 2px;
   text-align: center;
-  transition: color 1s ease; /* Smooth color transition on hover */
+  margin: 15px auto 10px auto;  /* Top, horizontal center, bottom margin */
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.5s ease;
 }
 
 .title:hover {
@@ -43,16 +47,17 @@ body {
 /* Navigation Menu Styling */
 .menu {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 6px;
 }
 
 /* Initially, hide the menu */
 .menu ul {
   list-style-type: none;
   padding: 10px;
+  margin-top: 4rem;
   position: absolute;
   left: -250px;  /* Hide the menu off-screen initially */
-  top: 20px;
+  top: 30px;
   background-color: rgba(0, 0, 0, 0.8);  /* Dark background for the menu */
   width: 250px;  /* Adjust the width of the menu */
   height: 40%;  /* Take up the full height of the screen */
@@ -92,6 +97,7 @@ body {
   border-radius: 10px; /* Slight rounded corners */
   margin: 20px; /* Add some margin around the section */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect to lift the section */
+  transition: transform 4s ease;
 }
 
 .about-section h2 {
@@ -121,7 +127,10 @@ body {
   color: red; /* Change link color on hover */
   text-decoration: underline; /* Add underline on hover */
 }
-
+.about-section:active{
+    transform:scale(1.1) ;
+    transition: transform 0.5s ease;
+}
 
 
 /* Skills Section Styling */
@@ -132,6 +141,11 @@ body {
   border-radius: 10px;
   margin: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+  transition: transform 4s ease;
+}
+.skills-section:active{
+    transform:scale(1.1) ;
+    transition: transform 0.5s ease;
 }
 
 .skills-section h2 {
@@ -174,6 +188,7 @@ body {
   border-radius: 10px; /* Slight rounded corners */
   margin: 20px; /* Add some margin around the section */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect to lift the section */
+  transition: transform 4s ease;
 }
 
 .language-proficiency h2 {
@@ -182,6 +197,11 @@ body {
   margin-bottom: 20px; /* Space below the heading */
   text-transform: uppercase; /* Make the heading uppercase */
   color: #f0a500; /* Golden color for the heading */
+  
+}
+.language-proficiency:active{
+    transform:scale(1.1);
+    transition:transform 0.5s ease;
 }
 
 .language-proficiency ul {
@@ -219,6 +239,11 @@ body {
   border-radius: 10px; /* Slight rounded corners */
   margin: 20px; /* Add some margin around the section */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect to lift the section */
+  transition: transform 4s ease;
+}
+.my-projects:active{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
 }
 
 .my-projects h2 {
@@ -264,13 +289,18 @@ body {
 .personal-information {
   padding: 50px 20px; /* Add padding around the section */
   color: white; /* White text for better readability */
-  background-color: #2c2c2c; /* Dark background to contrast the text */
+/*  background-color: #2c2c2c; /* Dark background to contrast the text */ */
   text-align: center; /* Center align the text */
   border-radius: 10px; /* Slight rounded corners */
   margin: 20px; /* Add some margin around the section */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect to lift the section */
+  transition: transform 4s ease
+    
 }
-
+.personal-information:active{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
 .personal-information h2 {
   font-size: 36px; /* Larger font for the section title */
   font-weight: 700;
@@ -308,7 +338,7 @@ body {
 .contact-us {
   padding: 50px 20px; /* Add padding around the section */
   color: white; /* White text for better readability */
-  background-color: #2c2c2c; /* Dark background to contrast the text */
+ /* background-color: #2c2c2c; /* Dark background to contrast the text */  */
   text-align: center; /* Center align the text */
   border-radius: 10px; /* Slight rounded corners */
   margin: 20px; /* Add some margin around the section */
@@ -316,7 +346,7 @@ body {
 }
 
 .contact-us h2 {
-  font-size: 36px; /* Larger font for the section title */
+  font-size: 32px; /* Larger font for the section title */
   font-weight: 700;
   margin-bottom: 20px; /* Space below the heading */
   text-transform: uppercase; /* Make the heading uppercase */
@@ -334,7 +364,7 @@ body {
 }
 
 .contact-us li {
-  font-size: 18px; /* Comfortable font size for the list items */
+  font-size: 15px; /* Comfortable font size for the list items */
   line-height: 1.8; /* Increase line height for readability */
   display: flex;
   align-items: center;
@@ -354,8 +384,8 @@ body {
 }
 
 .contact-us .contact-logo {
-  width: 30px; /* Set the size for the logos */
-  height: 30px;
+  width: 25px; /* Set the size for the logos */
+  height: 25px;
   margin-right: 10px; /* Space between the logo and the text */
 }
 
