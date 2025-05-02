@@ -127,7 +127,7 @@ body {
   color: red; /* Change link color on hover */
   text-decoration: underline; /* Add underline on hover */
 }
-.about-section:active{
+.about-section:hover{
     transform:scale(1.1) ;
     transition: transform 0.5s ease;
 }
@@ -143,7 +143,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
   transition: transform 4s ease;
 }
-.skills-section:active{
+.skills-section:hover{
     transform:scale(1.1) ;
     transition: transform 0.5s ease;
 }
@@ -199,7 +199,7 @@ body {
   color: #f0a500; /* Golden color for the heading */
   
 }
-.language-proficiency:active{
+.language-proficiency:hover{
     transform:scale(1.1);
     transition:transform 0.5s ease;
 }
@@ -234,14 +234,14 @@ body {
 .my-projects {
   padding: 50px 20px; /* Add padding around the section */
   color: white; /* White text for better readability */
-  background-color: #2c2c2c; /* Dark background to contrast the text */
+/*  background-color: #2c2c2c; */
   text-align: center; /* Center align the text */
   border-radius: 10px; /* Slight rounded corners */
   margin: 20px; /* Add some margin around the section */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect to lift the section */
   transition: transform 4s ease;
 }
-.my-projects:active{
+.my-projects:hover{
     transform: scale(1.1);
     transition: transform 0.5s ease;
 }
@@ -297,7 +297,7 @@ body {
   transition: transform 4s ease
     
 }
-.personal-information:active{
+.personal-information:hover{
     transform: scale(1.1);
     transition: transform 0.5s ease;
 }
